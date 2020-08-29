@@ -11,7 +11,7 @@ export function* watcherSaga() {
 //Fetch data from
 function care_recipient_Async (userInput){
           
-    return axios.get("https://birdiebackend.herokuapp.com", { params: { userInput: userInput.payload } })
+    return axios.get("http://localhost:8000/data", { params: { userInput: userInput.payload } })
     
 }
 
